@@ -535,11 +535,12 @@ function render(r, opts) {
       ? n(c.editsUnseen) + ' of ' + n(c.edits) + ' file edits ran with no prompt shown to you'
       : 'none in these sessions'));
     push('');
+    // A no-break space keeps each label on the same line as its number.
     const parts = [
-      'rules you saved ' + n(c.rule), 'mode ' + n(c.mode), 'auto mode ' + n(c.auto),
-      'settings ' + n(c.settings), 'hooks ' + n(c.hook),
+      'rules you saved\u00a0' + n(c.rule), 'mode\u00a0' + n(c.mode), 'auto mode\u00a0' + n(c.auto),
+      'settings\u00a0' + n(c.settings), 'hooks\u00a0' + n(c.hook),
     ];
-    push(...wrap('Not you: ' + parts.join(', ') + '.', 9, ''));
+    push(...wrap('Not you: ' + parts.join(', ') + '.', 9, '').map(l => l.replace(/\u00a0/g, ' ')));
     push(...wrap('Turned down without asking you: ' + n(c.blocked) + '.' +
       (c.other ? ' No decision in the log: ' + n(c.other) + '.' : ''), 0, ''));
   } else if (r.stats.oldFormat) {

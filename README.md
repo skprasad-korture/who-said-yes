@@ -18,6 +18,8 @@ and run it again.
 ## What it prints
 
 ```
+who-said-yes 0.1.0. Reads your agent logs on this computer. Sends nothing.
+
 Out of your agent's last 1,000 actions, how many do you think you said yes to
 yourself?
 Your guess (0 to 1000, or Enter to skip): 150
@@ -33,9 +35,13 @@ YOU, AT THE PROMPT. Claude Code, 9 Oct to 7 Nov, 64 sessions, 9,412 actions.
                       (my-app, 3 Nov)
   File edits          402 of 410 file edits ran with no prompt shown to you
 
-Not you: rules you saved 230, mode 3,104, auto mode 4,880, settings 1,120,
+Not you: rules you saved 230, mode 3,104, auto mode 4,880, settings 1,115,
          hooks 12.
 Turned down without asking you: 47.
+
+By project and by week: npx who-said-yes --detail
+
+https://www.korture.ai/get?utm_source=github&utm_medium=referral&utm_campaign=2026-11-free-tool&utm_content=cli
 ```
 
 The person comes first: your guess, your yeses and how fast they came, your
@@ -55,6 +61,7 @@ Options:
 | `--json` | prints the counts as JSON |
 | `--no-save` | does not remember this run |
 | `--version` | prints the version |
+| `--help` | prints the options |
 
 ## What it reads
 
@@ -101,8 +108,8 @@ they do, the tool says it cannot read the format rather than guessing.
 ```
 
 Then type `/who-said-yes:who-said-yes` (the plugin name, then the command).
-Claude asks you the guess question, runs the same
-file on your computer, and shows what it prints.
+Claude asks you the guess question, runs the same file on your computer, and
+shows what it prints.
 
 ## Update and uninstall
 
@@ -116,10 +123,11 @@ file on your computer, and shows what it prints.
 | Tool | What it counts |
 | --- | --- |
 | [ccusage](https://github.com/ccusage/ccusage) | tokens and money spent per day, session and model |
+| [Claude Code Usage Monitor](https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor) | how close you are to your plan's usage limits, live |
 | Claude Code `/insights` | patterns in your sessions, with suggested fixes for CLAUDE.md |
 | [WakaTime](https://wakatime.com) | time spent coding, by project and language |
 | Claude Code `/fewer-permission-prompts` | reads the same logs to add common commands to your allow list, so you are asked less |
-| [Microsoft AI-Engineering-Coach](https://github.com/microsoft/AI-Engineering-Coach) | grades how you use the AI |
+| [Microsoft AI Engineer Coach](https://github.com/microsoft/AI-Engineering-Coach) | scores your sessions against rules for good AI practice, in VS Code |
 | who-said-yes | which actions you approved yourself, and which something else approved for you |
 
 ## Who made it
