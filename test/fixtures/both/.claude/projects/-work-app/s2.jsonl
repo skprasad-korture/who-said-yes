@@ -1,0 +1,3 @@
+{"type":"user","uuid":"y1","timestamp":"2026-11-03T10:00:00.000Z","cwd":"/work/app","isSidechain":true,"entrypoint":"cli","message":{"role":"user","content":"Look into the bug."}}
+{"type":"assistant","uuid":"y2","timestamp":"2026-11-03T10:00:01.000Z","isSidechain":true,"message":{"role":"assistant","content":[{"type":"tool_use","id":"y3","name":"Bash","input":{}}]}}
+{"type":"user","uuid":"y4","timestamp":"2026-11-03T10:00:09.000Z","cwd":"/work/app","isSidechain":true,"permissionDecision":{"decision":"accept","source":"user_temporary"},"message":{"role":"user","content":[{"type":"tool_result","tool_use_id":"y3","content":"ok"}]}}

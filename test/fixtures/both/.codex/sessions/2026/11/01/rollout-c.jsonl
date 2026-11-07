@@ -1,0 +1,2 @@
+{"timestamp":"2026-11-01T10:00:00.000Z","type":"session_meta","payload":{"id":"c3","cwd":"/work/app","source":{"subagent":{"thread_spawn":{"depth":1}}},"originator":"codex_work_desktop"}}
+{"timestamp":"2026-11-01T10:00:02.000Z","type":"response_item","payload":{"type":"function_call","name":"shell","call_id":"s1","arguments":"{}"}}

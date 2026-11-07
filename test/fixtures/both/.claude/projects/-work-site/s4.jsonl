@@ -1,0 +1,3 @@
+{"type":"user","uuid":"w1","timestamp":"2026-11-03T13:00:00.000Z","cwd":"/private/tmp/check","entrypoint":"cli","message":{"role":"user","content":"Reply with exactly: OK"}}
+{"type":"assistant","uuid":"w2","timestamp":"2026-11-03T13:00:01.000Z","message":{"role":"assistant","content":[{"type":"tool_use","id":"w3","name":"Bash","input":{}}]}}
+{"type":"user","uuid":"w4","timestamp":"2026-11-03T13:00:02.000Z","cwd":"/private/tmp/check","entrypoint":"cli","permissionDecision":{"decision":"accept","source":"user_temporary"},"message":{"role":"user","content":[{"type":"tool_result","tool_use_id":"w3","content":"ok"}]}}

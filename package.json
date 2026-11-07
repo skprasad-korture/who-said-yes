@@ -1,0 +1,32 @@
+{
+  "name": "who-said-yes",
+  "version": "0.1.0",
+  "description": "Counts which of your coding agent's actions you approved yourself, from the Claude Code and Codex logs on your computer. Read only, nothing leaves your machine.",
+  "bin": {
+    "who-said-yes": "bin/who-said-yes.js"
+  },
+  "files": [
+    "bin/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/who-said-yes.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "claude-code",
+    "codex",
+    "permissions",
+    "agents",
+    "cli"
+  ],
+  "author": "Korture Technologies LLP",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skprasad-korture/who-said-yes.git"
+  }
+}

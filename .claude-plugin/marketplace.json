@@ -1,0 +1,14 @@
+{
+  "name": "who-said-yes",
+  "description": "who-said-yes: counts which of your agent's actions you approved yourself, from your local session logs.",
+  "owner": {
+    "name": "Korture Technologies LLP"
+  },
+  "plugins": [
+    {
+      "name": "who-said-yes",
+      "source": "./",
+      "description": "Counts which of your agent's actions you approved yourself at the prompt, from the session logs on your computer."
+    }
+  ]
+}
