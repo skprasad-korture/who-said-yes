@@ -100,7 +100,8 @@ they do, the tool says it cannot read the format rather than guessing.
 /plugin install who-said-yes@who-said-yes
 ```
 
-Then type `/who-said-yes`. Claude asks you the guess question, runs the same
+Then type `/who-said-yes:who-said-yes` (the plugin name, then the command).
+Claude asks you the guess question, runs the same
 file on your computer, and shows what it prints.
 
 ## Update and uninstall
