@@ -687,7 +687,7 @@ function ask(question) {
   });
 }
 
-async function main(argv, env) {
+async function main(argv) {
   const major = Number(process.versions.node.split('.')[0]);
   if (major < 18) {
     console.log('who-said-yes needs Node 18 or newer. You have Node ' + process.versions.node + '. Get a newer one at nodejs.org.');
@@ -697,7 +697,7 @@ async function main(argv, env) {
   if (o.version) { console.log(VERSION); return 0; }
   if (o.help) { console.log(HELP); return 0; }
   if (o.bad) { console.log(o.bad); return 2; }
-  const home = (env && env.HOME) || os.homedir();
+  const home = os.homedir();
   const previous = loadState(home);
   let guess = o.guess;
   const interactive = !o.json && o.ask && guess == null && process.stdin.isTTY && process.stdout.isTTY;
@@ -727,7 +727,7 @@ async function main(argv, env) {
 }
 
 if (require.main === module) {
-  main(process.argv.slice(2), process.env).then(code => { process.exitCode = code; }, () => {
+  main(process.argv.slice(2)).then(code => { process.exitCode = code; }, () => {
     console.log('who-said-yes stopped on something it did not expect, and counted nothing.' +
       ' Please tell us at github.com/skprasad-korture/who-said-yes/issues');
     process.exitCode = 1;

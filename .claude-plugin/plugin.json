@@ -8,5 +8,10 @@
   "homepage": "https://github.com/skprasad-korture/who-said-yes",
   "repository": "https://github.com/skprasad-korture/who-said-yes",
   "license": "MIT",
-  "keywords": ["permissions", "approvals", "claude-code", "codex"]
+  "keywords": [
+    "permissions",
+    "approvals",
+    "claude-code",
+    "codex"
+  ]
 }

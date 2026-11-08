@@ -1,6 +1,5 @@
 ---
 description: Count which of your agent's actions you approved yourself, from the logs on this computer
-allowed-tools: Bash(node:*)
 ---
 
 Run the local who-said-yes count for the person. It reads their Claude Code and
