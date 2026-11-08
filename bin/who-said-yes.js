@@ -578,7 +578,7 @@ function render(r, opts) {
       push('  ' + day(w.key).padEnd(34) + n(w.actions).padStart(10) + n(w.yes).padStart(10) + n(w.no).padStart(9) + per.padStart(13));
     }
   } else if (c.actions) {
-    push('', 'By project and by week: npx who-said-yes --detail');
+    push('', 'By project and by week: npx github:skprasad-korture/who-said-yes --detail');
   }
   if (opts.previous && c.since) {
     const p = opts.previous;
@@ -639,7 +639,7 @@ const HELP = [
   'session logs on this computer. Reads ~/.claude/projects and ~/.codex/sessions.',
   'Read only. Nothing leaves your computer.',
   '',
-  'Usage: npx who-said-yes [options]',
+  'Usage: npx github:skprasad-korture/who-said-yes [options]',
   '',
   '  --detail       add counts by project and by week',
   '  --no-guess     skip the guess question',
@@ -665,7 +665,7 @@ function parseArgs(argv) {
       const g = parseGuess(v);
       if (g == null) o.bad = 'The guess should be a whole number from 0 to 1000.';
       else o.guess = g;
-    } else o.bad = 'Unknown option ' + a + '. Run npx who-said-yes --help to see the options.';
+    } else o.bad = 'Unknown option ' + a + '. Run npx github:skprasad-korture/who-said-yes --help to see the options.';
   }
   return o;
 }

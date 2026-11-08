@@ -8,7 +8,7 @@ yourself, at the prompt, in that moment.
 It asks you to guess first.
 
 ```
-npx who-said-yes
+npx github:skprasad-korture/who-said-yes
 ```
 
 Nothing to install, no account, no email. Needs Node 18 or newer. If your
@@ -39,7 +39,7 @@ Not you: rules you saved 230, mode 3,104, auto mode 4,880, settings 1,115,
          hooks 12.
 Turned down without asking you: 47.
 
-By project and by week: npx who-said-yes --detail
+By project and by week: npx github:skprasad-korture/who-said-yes --detail
 
 https://www.korture.ai/get?utm_source=github&utm_medium=referral&utm_campaign=2026-11-free-tool&utm_content=cli
 ```
@@ -113,7 +113,7 @@ shows what it prints.
 
 ## Update and uninstall
 
-- Update: `npx who-said-yes@latest`, or `/plugin marketplace update who-said-yes`
+- Update: `npx github:skprasad-korture/who-said-yes`, or `/plugin marketplace update who-said-yes`
   in Claude Code.
 - Uninstall: `rm -rf ~/.who-said-yes` removes the one file it keeps. For the
   plugin, `/plugin uninstall who-said-yes`.
