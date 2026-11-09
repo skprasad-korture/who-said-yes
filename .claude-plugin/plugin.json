@@ -1,0 +1,17 @@
+{
+  "name": "who-said-yes",
+  "description": "Counts which of your agent's actions you approved yourself at the prompt, from the session logs on your computer. Read only, nothing leaves your machine.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Korture Technologies LLP"
+  },
+  "homepage": "https://github.com/skprasad-korture/who-said-yes",
+  "repository": "https://github.com/skprasad-korture/who-said-yes",
+  "license": "MIT",
+  "keywords": [
+    "permissions",
+    "approvals",
+    "claude-code",
+    "codex"
+  ]
+}
