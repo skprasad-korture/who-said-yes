@@ -7,7 +7,7 @@
   "plugins": [
     {
       "name": "who-said-yes",
-      "source": "./",
+      "source": "./plugin",
       "description": "Counts which of your agent's actions you approved yourself at the prompt, from the session logs on your computer."
     }
   ]

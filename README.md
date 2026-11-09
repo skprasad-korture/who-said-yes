@@ -108,8 +108,9 @@ they do, the tool says it cannot read the format rather than guessing.
 ```
 
 Then type `/who-said-yes:who-said-yes` (the plugin name, then the command).
-Claude asks you the guess question, runs the same file on your computer, and
-shows what it prints.
+Claude asks you the guess question, runs the same tool with
+`npx github:skprasad-korture/who-said-yes#v0.1.0`, and shows what it prints.
+The plugin itself is only Markdown and JSON, in the `plugin/` folder.
 
 ## Update and uninstall
 
